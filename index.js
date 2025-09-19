@@ -2,12 +2,18 @@
 // Follow the instructions and complete each task.
 
 // TASK 1: Arrays - Create, Read, Update, Delete (CRUD)
-// A. Create an array called `fruits` that contains: "apple", "banana", "cherry".
+// A. Create an array called `fruits` that contains: "apple", "banana", "cherry". 
+let fruits = ["apple", "Banana", "Cherry"]
 // B. Read (log) the second fruit in the array.
+console.log(fruits[1]);
 // C. Update the third fruit to "orange".
+fruits[2] = "orange";
 // D. Add a new fruit, "grape", to the end of the array.
+fruits.push("Grape");
 // E. Delete the last fruit in the array.
+fruits.pop();
 // F. Log the updated array.
+console.log(fruits);
 
 
 
@@ -19,20 +25,30 @@
 // E. Delete the `age` property from the object.
 // F. Log the updated student object.
 
-
-
+let student = {
+   name: "Jeremy",
+   age:17,
+   grade:"A"
+}
+student.grade = "A+";
+delete student.age;
+console.log(student);
 // TASK 3: Functions - Create and Call Functions
 // A. Write a function called `calculateTotal` that takes two inputs: price and quantity.
 //    The function should return the total price by multiplying price by quantity.
 
+function calculateTotal(price, quantity) {
+return price * quantity;
 
+}
 
 // B. Call the `calculateTotal` function 3 times and console log the outputs
 // First with the inputs 20 and 5
 // Second with the inputs 12 and 8
 // Third with the inputs 9 and 42
-
-
+console.log(calculateTotal(20,5));
+console.log(calculateTotal(12,8));
+console.log(calculateTotal(9,42));
 /*
    ==== Final Commit Instructions ====
    At this point, commit your work with an appropriate commit message.
